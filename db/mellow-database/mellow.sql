@@ -11,7 +11,7 @@ INSERT INTO studio_furn (type, url, rooms_id) VALUES
   1
 );
 
-INSERT INTO explore VALUES
+INSERT INTO explore (name, url) VALUES
 (
   'Deborah',
   'https://images.homedepot-static.com/productImages/2fed2fc9-6dd3-40b5-8a9e-c48e08a3235b/svn/ideal-decor-wall-murals-dm962-64_1000.jpg'
