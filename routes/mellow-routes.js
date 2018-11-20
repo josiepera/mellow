@@ -8,6 +8,7 @@ router.get('/:id', controller.show);
 router.route('/')
   .get(
     controller.index
+    controller.indexExplore
   )
 
 module.exports = router;

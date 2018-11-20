@@ -6,16 +6,20 @@ mellowModels.findAll = () => {
   return db.query(`SELECT * FROM rooms`);
 };
 
+mellowModels.exploreAll = () => {
+  return db.query(`SELECT * FROM explore`)
+}
+
 mellowModels.findById = id => {
   return db.oneOrNone(
     `
     SELECT * FROM rooms
-    JOIN studio_furn
-    ON rooms.studio_id = studio_furn.id
-    WHERE rooms.id = $1
+    JOIN rooms
+    ON studio_furn.rooms_id = rooms.id
+    WHERE studio_furn.id = $1
   `,
-    [id]
-  );
+    [id]);
+};
 
   mellowModels.create = rooms => {
     return db.one(
@@ -25,10 +29,6 @@ mellowModels.findById = id => {
        VALUES ($/type/, $/url/)
        RETURNING *
       `, rooms);
-  }
-
-
-
 };
 
 module.exports = mellowModels;

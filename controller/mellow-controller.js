@@ -15,6 +15,19 @@ mellowController.index = (req, res) => {
       res.status(500).json({ err });
     });
 };
+mellowController.indexExplore = (req, res) => {
+  Mellow.exploreAll()
+    .then(mellows => {
+      res.json({
+        message: 'ok',
+        data: mellows,
+      });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json({ err });
+    });
+};
 
 mellowController.show = (req, res) => {
   Mellow.findById(req.params.id)
@@ -33,7 +46,7 @@ mellowController.show = (req, res) => {
 mellowController.add = (req, res) => {
   Mellow.add({
     host_title: req.body.host_title,
-    
+
   })
     .then(mellow => {
       res.json({
