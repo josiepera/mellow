@@ -19,7 +19,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This app will be built in partnership with the UX team who came up with the idea of this app.  The point of this app is to help users maximize space within their rooms of their apartments or houses.  The landing page of this app will be a general page containing the app name.  Next, the user will be directed to a page with pictures of the quick tutorial of the app.  Once the user passes this, they will be directed to a default explore page similar to Instagram's explore.  When a User clicks on a picture, they will be directed to a page with general information of the user who posted the page. The bottom nav will route the user to the explore page, the users customization, and the faves of the user that comes from the explore page.  When the user clicks on the user icon, they will be directed to the rooms page where they select which room they will customize. Then, they would choose which furniture would go into their room.  Next, they will go to the next page where the user can drag and drop the furniture within their "room".  This page will also render a list of suggestions that come from a table in the db.
 
 ## Wireframes
 
@@ -27,7 +27,18 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+- Pages Layout | 15hrs
+- React frontend build | 24hrs
+- Server setup | 4 hrs
+- MVC | 14 hrs
+- Styles | 8 hrs
+- DB and tables | 6 hours
+- joining tables | 3hrs
+- faves | 6hrs
+- Drag and Drop | 8hrs
+- User Auth Simulation | 4hrs
+- User DB | 4hrs
+- Advanced Styles | 4hrs
 
 ### MVP/PostMVP - 5min
 
@@ -37,17 +48,19 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Pages Layout
 - React frontend build
-- Rendering 
 - Server setup
 - MVC
 - Styles
 - DB and tables
 - joining tables
 - faves
+- Drag and Drop
 
 #### PostMVP
 
--
+- User Auth Simulation
+- User DB
+- Advanced Styles
 
 ## React Architectural Design
 
@@ -67,9 +80,24 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Filler Pages | H | 3hrs|  |  |
+| RoomList Component | H | 6hrs|  |  |
+| SingleRoom Component | H | 4hrs|  |  |
+| ExplorePage | H | 4hrs|  |  |
+| ExploreSingle | H | 4hrs|  |  |
+| React Router/Bottom Nav | H | 3hrs|  |  |
+| Server Setup | H | 4hrs|  |  |
+| Routes | H | 5hrs|  |  |
+| Model | H | 5hrs |  |  |
+| Controller | H | 4hrs|  |  |
+| Styles | H | 8hrs|  |  |
+| DB and Tables | H | 4hrs|  |  |
+| Joining Tables | H | 3hrs|  |  |
+| Faves | H | 5hrs|  |  |
+| Drag and Drop | M | 5hrs|  |  |
+| User Auth Sim | M | 4hrs|  |  |
+| Advanced Styling | M | 6hrs|  |  |
+| Total | H | 77hrs|  |  |
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
