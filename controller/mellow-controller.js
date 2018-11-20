@@ -30,4 +30,21 @@ mellowController.show = (req, res) => {
     });
 };
 
+mellowController.add = (req, res) => {
+  Mellow.add({
+    host_title: req.body.host_title,
+    
+  })
+    .then(mellow => {
+      res.json({
+        message: 'ok',
+        data: res.locals.data,
+      });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json({ err });
+    });
+};
+
 module.exports = mellowController;

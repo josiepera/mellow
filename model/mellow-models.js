@@ -10,12 +10,25 @@ mellowModels.findById = id => {
   return db.oneOrNone(
     `
     SELECT * FROM rooms
-    JOIN rooms
-    ON studio_furn.rooms_id = rooms.id
-    WHERE studio_furn.id = $1
+    JOIN studio_furn
+    ON rooms.studio_id = studio_furn.id
+    WHERE rooms.id = $1
   `,
     [id]
   );
+
+  mellowModels.create = rooms => {
+    return db.one(
+      `
+       INSERT INTO rooms
+       (type, url)
+       VALUES ($/type/, $/url/)
+       RETURNING *
+      `, rooms);
+  }
+
+
+
 };
 
 module.exports = mellowModels;
