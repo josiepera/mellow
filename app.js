@@ -17,7 +17,7 @@ app.get('/', (req,res) => {
 const routes = require('./routes/mellow-routes')
 app.use('/rooms', routes)
 
-const exploreRoutes = require('.routes/explore-routes')
+const exploreRoutes = require('./routes/explore-routes')
 app.use('/explore', exploreRoutes)
 
 

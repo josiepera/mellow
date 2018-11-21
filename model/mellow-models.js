@@ -3,20 +3,16 @@ const db = require('../db/config');
 const mellowModels = {};
 
 mellowModels.findAll = () => {
-  return db.query(`SELECT * FROM rooms`);
+  return db.query(`SELECT * FROM rooms JOIN furniture ON furniture.rooms_id = rooms.id`);
 };
-
-mellowModels.exploreAll = () => {
-  return db.query(`SELECT * FROM explore`)
-}
 
 mellowModels.findById = id => {
   return db.oneOrNone(
     `
     SELECT * FROM rooms
-    JOIN rooms
-    ON studio_furn.rooms_id = rooms.id
-    WHERE studio_furn.id = $1
+    JOIN furniture
+    ON furniture.rooms_id = rooms.id
+    WHERE rooms.id = $1
   `,
     [id]);
 };
