@@ -13,7 +13,6 @@ app.get('/', (req,res) => {
   res.send(`<h1>Home Page</h1>`)
 })
 
-
 const routes = require('./routes/mellow-routes')
 app.use('/rooms', routes)
 
