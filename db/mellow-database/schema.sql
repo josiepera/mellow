@@ -27,5 +27,10 @@ CREATE TABLE IF NOT EXISTS furniture (
 CREATE TABLE IF NOT EXISTS explore (
   id SERIAL PRIMARY KEY NOT NULL,
   name TEXT NOT NULL,
-  url TEXT NOT NULL
+  location TEXT NOT NULL,
+  profile_url VARCHAR(10000) NOT NULL,
+  url TEXT NOT NULL,
+  title TEXT NOT NULL,
+  size TEXT NOT NULL,
+  description TEXT NOT NULL
 );

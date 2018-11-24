@@ -2,7 +2,7 @@ INSERT INTO rooms (type, title, url, description) VALUES
 (
   'Bedroom',
   'Your Optimized Layout',
-  'https://www.millerprop.com/wp-content/uploads/sites/4824/2016/03/DuvalCourt-Floorplan-Studio.jpg',
+  'https://i.stack.imgur.com/5sCRa.jpg',
   'This is how your items fit best in your 135 square-foot U-shaped room.'
 );
 
@@ -23,8 +23,13 @@ INSERT INTO furniture (room, couch_name, couch_url, bed_name, bed_url, table_nam
 );
 
 
-INSERT INTO explore (name, url) VALUES
+INSERT INTO explore (name, location, profile_url, url, title, size, description) VALUES
 (
-  'Deborah',
-  'https://images.homedepot-static.com/productImages/2fed2fc9-6dd3-40b5-8a9e-c48e08a3235b/svn/ideal-decor-wall-murals-dm962-64_1000.jpg'
+  'Deborah Clark',
+  'Manhattan',
+  'https://media.graytvinc.com/images/810*452/Brendan+Fraser+MGN.PNG',
+  'https://images.homedepot-static.com/productImages/2fed2fc9-6dd3-40b5-8a9e-c48e08a3235b/svn/ideal-decor-wall-murals-dm962-64_1000.jpg',
+  'Organized Living Dream',
+  '50 Sq.Ft.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 )
