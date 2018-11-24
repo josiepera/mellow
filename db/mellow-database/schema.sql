@@ -19,6 +19,8 @@ CREATE TABLE IF NOT EXISTS furniture (
   table_url VARCHAR(10000) NOT NULL,
   cabinet_name VARCHAR(10000) NOT NULL,
   cabinet_url VARCHAR(10000) NOT NULL,
+  rug_name VARCHAR(10000) NOT NULL,
+  rug_url VARCHAR(10000) NOT NULL,
   rooms_id INTEGER REFERENCES rooms(id)
 );
 

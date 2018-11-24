@@ -6,7 +6,7 @@ INSERT INTO rooms (type, title, url, description) VALUES
   'This is how your items fit best in your 135 square-foot U-shaped room.'
 );
 
-INSERT INTO furniture (room, couch_name, couch_url, bed_name, bed_url, table_name, table_url, cabinet_name, cabinet_url, rooms_id) VALUES
+INSERT INTO furniture (room, couch_name, couch_url, bed_name, bed_url, table_name, table_url, cabinet_name, cabinet_url, rug_name, rug_url, rooms_id) VALUES
 (
   'Bedroom',
   'Couch',
@@ -17,6 +17,8 @@ INSERT INTO furniture (room, couch_name, couch_url, bed_name, bed_url, table_nam
   'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxWnaIeMARA0srI0--SrxPP-YB1swXrE0DYgm7N_6PBR1ysC-wRw',
   'Cabinet',
   'https://image.shutterstock.com/image-vector/medicine-cabinet-vector-icon-isolated-260nw-1152728507.jpg',
+  'Rug',
+  'https://i.pinimg.com/736x/37/5e/6c/375e6c0904030afc90366ffc75c55769--nature-pattern-trellis-rug.jpg',
   1
 );
 
