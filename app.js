@@ -16,6 +16,12 @@ app.get('/', (req,res) => {
 const routes = require('./routes/mellow-routes')
 app.use('/rooms', routes)
 
+const exploreRoutes = require('./routes/explore-routes')
+app.use('/explore', exploreRoutes)
+
+const furnitureRoutes = require('./routes/furniture-routes')
+app.use('/furniture_list', furnitureRoutes)
+
 app.use('*', (req,res) => {
   res.status(404).send('Page Not Found!')
 })

@@ -1,8 +1,8 @@
-const Mellow = require('../model/mellow-models');
+const Mellow = require('../model/explore-models');
 
-const mellowController = {};
+const exploreController = {};
 
-mellowController.index = (req, res) => {
+exploreController.index = (req, res) => {
   Mellow.findAll()
     .then(mellows => {
       res.json({
@@ -16,7 +16,7 @@ mellowController.index = (req, res) => {
     });
 };
 
-mellowController.show = (req, res) => {
+exploreController.show = (req, res) => {
   Mellow.findById(req.params.id)
     .then(mellow => {
       res.json({
@@ -30,10 +30,10 @@ mellowController.show = (req, res) => {
     });
 };
 
-mellowController.add = (req, res) => {
-  Mellow.add({
-    host_title: req.body.host_title,
-
+exploreController.create = (req, res) => {
+  Mellow.create({
+    name: req.body.name,
+    url: req.body.url
   })
     .then(mellow => {
       res.json({
@@ -47,4 +47,4 @@ mellowController.add = (req, res) => {
     });
 };
 
-module.exports = mellowController;
+module.exports = exploreController;
