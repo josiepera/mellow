@@ -2,7 +2,7 @@ INSERT INTO rooms (type, title, url, description) VALUES
 (
   'Bedroom',
   'Your Optimized Layout',
-  'https://i.stack.imgur.com/5sCRa.jpg',
+  'https://i.imgur.com/BtBmXB3.png',
   'This is how your items fit best in your 135 square-foot U-shaped room.'
 );
 
@@ -10,15 +10,15 @@ INSERT INTO furniture (room, couch_name, couch_url, bed_name, bed_url, table_nam
 (
   'Bedroom',
   'Couch',
-  'https://static.thenounproject.com/png/1106557-200.png',
+  'https://i.imgur.com/c5W0zAX.png',
   'Bed',
-  'https://b3h2.scene7.com/is/image/BedBathandBeyond/9446313300685m',
+  'https://i.imgur.com/m3NDjpZ.png',
   'Table',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxWnaIeMARA0srI0--SrxPP-YB1swXrE0DYgm7N_6PBR1ysC-wRw',
+  'https://i.imgur.com/VPjTigf.png',
   'Cabinet',
-  'https://image.shutterstock.com/image-vector/medicine-cabinet-vector-icon-isolated-260nw-1152728507.jpg',
+  'https://i.imgur.com/fkmp28u.png',
   'Rug',
-  'https://i.pinimg.com/736x/37/5e/6c/375e6c0904030afc90366ffc75c55769--nature-pattern-trellis-rug.jpg',
+  'https://i.imgur.com/tGb0Q1a.png',
   1
 );
 
@@ -83,21 +83,21 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
 INSERT INTO furniture_list (name, url) VALUES
 (
   'Couch',
-  'https://static.thenounproject.com/png/1106557-200.png'
+  'https://i.imgur.com/c5W0zAX.png'
 ),
 (
   'Bed',
-  'https://b3h2.scene7.com/is/image/BedBathandBeyond/9446313300685m'
+  'https://i.imgur.com/m3NDjpZ.png'
 ),
 (
   'Table',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxWnaIeMARA0srI0--SrxPP-YB1swXrE0DYgm7N_6PBR1ysC-wRw'
+  'https://i.imgur.com/VPjTigf.png'
 ),
 (
   'Cabinet',
-  'https://image.shutterstock.com/image-vector/medicine-cabinet-vector-icon-isolated-260nw-1152728507.jpg'
+  'https://i.imgur.com/fkmp28u.png'
 ),
 (
   'Rug',
-  'https://i.pinimg.com/736x/37/5e/6c/375e6c0904030afc90366ffc75c55769--nature-pattern-trellis-rug.jpg'
+  'https://i.imgur.com/tGb0Q1a.png'
 );

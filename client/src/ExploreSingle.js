@@ -41,7 +41,7 @@ class ExploreSingle extends Component {
             <img src={this.state.explore.url} alt={this.state.explore.title} />
           </div>
           <div className="bottom-info">
-            <p>{this.state.explore.title}</p>
+            <h4>{this.state.explore.title}</h4>
             <p>{this.state.explore.size}</p>
             <p>{this.state.explore.description}</p>
           </div>
