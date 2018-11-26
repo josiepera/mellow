@@ -90,20 +90,20 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Filler Pages | H | 3hrs|  |  |
-| RoomList Component | H | 6hrs|  |  |
+| RoomList Component | H | 6hrs| 4hrs | 4hrs |
 | SingleRoom Component | H | 4hrs|  |  |
-| ExplorePage | H | 4hrs|  |  |
-| ExploreSingle | H | 4hrs|  |  |
-| React Router/Bottom Nav | H | 3hrs|  |  |
-| Server Setup | H | 4hrs|  |  |
+| ExplorePage | H | 4hrs| 4hrs | 4hrs |
+| ExploreSingle | H | 4hrs| 4hrs | 4hrs |
+| React Router/Bottom Nav | H | 3hrs| 2hrs | 2hrs |
+| Server Setup | H | 4hrs| 2hrs | 2hrs |
 | Routes | H | 5hrs|  |  |
 | Model | H | 5hrs |  |  |
 | Controller | H | 4hrs|  |  |
 | Styles | H | 8hrs|  |  |
-| DB and Tables | H | 4hrs|  |  |
-| Joining Tables | H | 3hrs|  |  |
+| DB and Tables | H | 4hrs| 3hrs | 3hrs |
+| Joining Tables | H | 3hrs| 1hr | 1hr |
 | Faves | H | 5hrs|  |  |
-| Drag and Drop | M | 5hrs|  |  |
+| Drag and Drop | M | 5hrs| 2hrs | 2hrs |
 | User Auth Sim | M | 4hrs|  |  |
 | Advanced Styling | M | 6hrs|  |  |
 | Total | H | 77hrs|  |  |

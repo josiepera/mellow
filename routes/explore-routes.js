@@ -11,7 +11,7 @@ router.route('/')
   )
 
 router.route('/')
-  .get(
+  .post(
     controller.create
   )
 
