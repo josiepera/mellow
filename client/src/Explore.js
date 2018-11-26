@@ -11,8 +11,11 @@ const Explore = (props) => {
 						<h1>Mellow</h1>
 					</div>
 					<div className="ex-inlist">
-      			<Link to={`/explore/${props.explore.id}`}><img src={props.explore.url} alt={props.explore.name}/></Link>
-      			<h2>{props.explore.name}</h2>
+					 <div className="explore-container">
+      			 <Link to={`/explore/${props.explore.id}`}><img src={props.explore.url} alt={props.explore.name}/></Link>
+      		   <h2>{props.explore.name}</h2>
+						 <p>{props.explore.title}</p>
+					 </div>
     			</div>
 					<FooterNav/>
 			</div>

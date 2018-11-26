@@ -27,7 +27,7 @@ class ExploreAdd extends Component{
   handleFormSubmit(e){
 	  // stop form from refreshing the page
 	  e.preventDefault()
-	  axios.post('/icecream',  {
+	  axios.post('/explore',  {
 	      profile_url: this.state.profile_url,
 	      name:this.state.name,
 	      location:this.state.location,

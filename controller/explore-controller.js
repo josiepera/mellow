@@ -38,12 +38,13 @@ exploreController.create = (req, res) => {
     profile_url: req.body.profile_url,
     url: req.body.url,
     title: req.body.title,
-    size: req.body.description
+    size: req.body.size,
+    description: req.body.description
   })
     .then(mellow => {
       res.json({
         message: 'ok',
-        data: res.locals.data,
+        data: mellow,
       });
     })
     .catch(err => {

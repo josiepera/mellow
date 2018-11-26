@@ -33,16 +33,18 @@ class ExploreSingle extends Component {
         <div className="prof-header">
           <img className="profile-pic" src={this.state.explore.profile_url} alt="Profile Pic" />
             <div className="prof-info">
-              <p>{this.state.explore.name}</p>
+              <p className="prof-name">{this.state.explore.name}</p>
               <p className="location">{<LocationOn />} {this.state.explore.location}</p>
             </div>
         </div>
           <div className="room-layout">
             <img src={this.state.explore.url} alt={this.state.explore.title} />
           </div>
-          <p>{this.state.explore.title}</p>
-          <p>{this.state.explore.size}</p>
-          <p>{this.state.explore.description}</p>
+          <div className="bottom-info">
+            <p>{this.state.explore.title}</p>
+            <p>{this.state.explore.size}</p>
+            <p>{this.state.explore.description}</p>
+          </div>
        </div>
      )
    } else return <img className="loading" src="https://i.imgur.com/EATfJf4.gif" alt="...loading"></img>

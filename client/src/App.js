@@ -20,7 +20,7 @@ class App extends Component {
             <Route exact path="/rooms/:id" component={RoomSingle} />
             <Route exact path="/explore" component={ExploreList} />
             <Route exact path="/explore/:id" component={ExploreSingle} />
-            <Route exact path="/explore/add" component={ExploreAdd}/>
+            <Route exact path="/add" component={ExploreAdd}/>
         </Switch>
       </Router>
     );

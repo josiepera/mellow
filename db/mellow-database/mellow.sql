@@ -27,30 +27,58 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
 (
   'Deborah Clark',
   'Manhattan',
-  'https://media.graytvinc.com/images/810*452/Brendan+Fraser+MGN.PNG',
-  'https://images.homedepot-static.com/productImages/2fed2fc9-6dd3-40b5-8a9e-c48e08a3235b/svn/ideal-decor-wall-murals-dm962-64_1000.jpg',
+  'https://i.imgur.com/YsKVAh4.jpg',
+  'https://i.imgur.com/8Vq1hHP.jpg',
   'Organized Living Dream',
   '50 Sq.Ft.',
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ),
 (
-  'Luke Skywalker',
-  'Manhattan',
-  'https://media.graytvinc.com/images/810*452/Brendan+Fraser+MGN.PNG',
-  'https://images.homedepot-static.com/productImages/2fed2fc9-6dd3-40b5-8a9e-c48e08a3235b/svn/ideal-decor-wall-murals-dm962-64_1000.jpg',
+  'Morgan Rockwell',
+  'Brooklyn',
+  'https://i.imgur.com/4Ys763V.jpg',
+  'https://i.imgur.com/NgkAGZc.jpg',
   'Organized Living Dream',
   '50 Sq.Ft.',
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ),
 (
-  'Juwanna Mann',
-  'Manhattan',
-  'https://media.graytvinc.com/images/810*452/Brendan+Fraser+MGN.PNG',
-  'https://images.homedepot-static.com/productImages/2fed2fc9-6dd3-40b5-8a9e-c48e08a3235b/svn/ideal-decor-wall-murals-dm962-64_1000.jpg',
+  'Meghan Lourdes',
+  'Greater Boston',
+  'https://i.imgur.com/HRBCgtR.jpg',
+  'https://i.imgur.com/1J6Laa0.jpg',
   'Organized Living Dream',
   '50 Sq.Ft.',
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-);
+),
+(
+  'Layla Clapton',
+  'Long Island',
+  'https://i.imgur.com/gsLgACg.jpg',
+  'https://i.imgur.com/kVCyg0I.jpg',
+  'Organized Living Dream',
+  '50 Sq.Ft.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+),
+(
+  'Paula Benning',
+  'Greater Los Angeles',
+  'https://i.imgur.com/kcJd7Aj.jpg',
+  'https://i.imgur.com/4g3KPSE.jpg',
+  'Organized Living Dream',
+  '50 Sq.Ft.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+),
+(
+  'Grace Kalimba',
+  'Greater Sacramento',
+  'https://i.imgur.com/cPZtse3.jpg',
+  'https://i.imgur.com/7hjFNbE.jpg',
+  'Organized Living Dream',
+  '50 Sq.Ft.',
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+)
+;
 
 INSERT INTO furniture_list (name, url) VALUES
 (

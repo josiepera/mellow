@@ -1,72 +1,42 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import FooterNav from './FooterNav';
-import Draggable from 'react-draggable';
+import axios from 'axios';
+import Furniture from './Furniture'
 
-class Furniture extends Component {
+class FurnitureList  extends Component {
   state = {
-    show: false,
-    deltaPosition: {
-      x: 0, y: 0
-    },
-    controlledPosition: {
-      x: -400, y: 200
-    }
-  }
-
-  handleDrag(e, ui) {
-      const {x, y} = this.state.deltaPosition;
-      this.setState({
-        deltaPosition: {
-          x: x + ui.deltaX,
-          y: y + ui.deltaY,
-        }
-      });
+      apiDataLoaded: false,
+      apiData: null
     }
 
-  adjustXPos(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    const {x, y} = this.state.controlledPosition;
-    this.setState({controlledPosition: {x: x - 10, y}});
+  componentDidMount() {
+    axios.get('/furniture_list')
+    	.then( res => {
+    		this.setState(prevState => ({
+    			apiDataLoaded: true,
+    			apiData: res.data.data
+    	}))
+    })
   }
+  renderFurniture() {
+		if(this.state.apiDataLoaded) {
+			return this.state.apiData.map(d => {
+				return (
+					<Furniture key={d.id} furniture={d} />
+				)
+			})
+		} else return <p>Loading...</p>
+	}
 
-  adjustYPos(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    const {controlledPosition} = this.state;
-    const {x, y} = controlledPosition;
-    this.setState({controlledPosition: {x, y: y - 10}});
-  }
-
-  toggleInfo = () => {
-    this.setState(prevState => ({
-      show: !prevState.show
-    }));
-  }
 
   render(){
-    const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
-    const {deltaPosition, controlledPosition} = this.state;
-
-	return(
-		<>
-			<div>
-					<div className="furn-inlist" onClick={this.toggleInfo.bind(this)}>
-            <h2>{this.props.furniture.name}</h2>
-    			</div>
-          {this.state.show &&
-          <Draggable {...dragHandlers}>
-            <img className="furn-pic"
-            src={this.props.furniture.url}
-            alt="furniture" />
-          </Draggable>
-        }
-					<FooterNav/>
-			</div>
-		</>
-	)
-}
+    return(
+    <>
+      <div className='furniture-list'>
+  			{this.renderFurniture()}
+  		</div>
+    </>
+    )
+  }
 }
 
-export default Furniture;
+export default FurnitureList;
