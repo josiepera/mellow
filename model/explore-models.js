@@ -19,8 +19,8 @@ mellowModels.findById = id => {
     return db.one(
       `
        INSERT INTO explore
-       (name, url)
-       VALUES ($/name/, $/url/)
+       (name, location, profile_url, url, title, size, description)
+       VALUES ($/name/, $/location/, $/profile_url/, $/url/, $/title/, $/size/, $/description/)
        RETURNING *
       `, explore);
 };

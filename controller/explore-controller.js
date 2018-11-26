@@ -30,10 +30,15 @@ exploreController.show = (req, res) => {
     });
 };
 
+
 exploreController.create = (req, res) => {
   Mellow.create({
     name: req.body.name,
-    url: req.body.url
+    location: req.body.location,
+    profile_url: req.body.profile_url,
+    url: req.body.url,
+    title: req.body.title,
+    size: req.body.description
   })
     .then(mellow => {
       res.json({
