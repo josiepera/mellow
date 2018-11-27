@@ -64,7 +64,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'Paula Benning',
   'Greater Los Angeles',
   'https://i.imgur.com/kcJd7Aj.jpg',
-  'https://i.imgur.com/4g3KPSE.jpg',
+  'https://www.livingspaces.com/globalassets/images/inspiration/modern_livingroom_110217_1.jpg',
   'Organized Living Dream',
   '50 Sq.Ft.',
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'

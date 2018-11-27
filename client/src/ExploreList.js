@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Explore from './Explore'
 import axios from 'axios';
+import FooterNav from './FooterNav'
 
 class ExploreList extends Component {
   state = {
@@ -32,9 +33,12 @@ class ExploreList extends Component {
   render(){
     return(
     <>
-      <div className='explore-list'>
-  			{this.renderExplore()}
-  		</div>
+      <div>
+        <div className='explore-list'>
+  			   {this.renderExplore()}
+  		   </div>
+         <FooterNav/>
+      </div>
     </>
     )
   }

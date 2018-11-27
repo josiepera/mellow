@@ -30,6 +30,7 @@ class ExploreSingle extends Component {
           <Link to={`/explore`}><div className="back">{<ArrowBackIos />}</div></Link>
           <h1>Post</h1>
         </div>
+
         <div className="prof-header">
           <img className="profile-pic" src={this.state.explore.profile_url} alt="Profile Pic" />
             <div className="prof-info">
@@ -37,12 +38,15 @@ class ExploreSingle extends Component {
               <p className="location">{<LocationOn />} {this.state.explore.location}</p>
             </div>
         </div>
+
           <div className="room-layout">
             <img src={this.state.explore.url} alt={this.state.explore.title} />
           </div>
           <div className="bottom-info">
-            <h4>{this.state.explore.title}</h4>
-            <p>{this.state.explore.size}</p>
+            <div className="bottom-header">
+              <h4>{this.state.explore.title}</h4>
+              <p>{this.state.explore.size}</p>
+            </div>
             <p>{this.state.explore.description}</p>
           </div>
        </div>
