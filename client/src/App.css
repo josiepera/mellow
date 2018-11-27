@@ -135,7 +135,19 @@ img{
 }
 
 .furn-pic{
-  position: fixed;
+  position: absolute;
+  max-height: 30%;
+  max-width: 30%;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  align-items: center;
+}
+.couch{
+  position: absolute;
   max-height: 30%;
   max-width: 30%;
   left: 25%;

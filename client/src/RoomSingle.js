@@ -3,13 +3,20 @@ import FooterNav from './FooterNav'
 import axios from 'axios';
 import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
 import { Link } from 'react-router-dom';
-import FurnitureList from './FurnitureList'
+import FurnitureList from './FurnitureList';
+import Draggable from 'react-draggable';
 
 class RoomSingle extends Component {
   state = {
 		room: null,
 		apiDataLoaded: false,
-    show: false
+    show: false,
+    deltaPosition: {
+      x: 0, y: 0
+    },
+    controlledPosition: {
+      x: -400, y: 200
+    }
 	}
 
   toggleInfo = () => {
@@ -29,7 +36,36 @@ class RoomSingle extends Component {
     }).catch(err => console.log(err))
   }
 
+
+  handleDrag(e, ui) {
+      const {x, y} = this.state.deltaPosition;
+      this.setState({
+        deltaPosition: {
+          x: x + ui.deltaX,
+          y: y + ui.deltaY,
+        }
+      });
+    }
+
+  adjustXPos(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const {x, y} = this.state.controlledPosition;
+    this.setState({controlledPosition: {x: x - 10, y}});
+  }
+
+  adjustYPos(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const {controlledPosition} = this.state;
+    const {x, y} = controlledPosition;
+    this.setState({controlledPosition: {x, y: y - 10}});
+  }
+
+
   renderRoomOrLoading() {
+    const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
+    const {deltaPosition, controlledPosition} = this.state;
    if (this.state.apiDataLoaded) {
      return (
       <>
@@ -41,7 +77,12 @@ class RoomSingle extends Component {
         <div className="top">
           <h3>{this.state.room.title}</h3>
           <div className="room-layout">
-            <img src={this.state.room.url} alt={this.state.room.type} />
+            <img className="room-pic"src={this.state.room.url} alt={this.state.room.type} />
+
+            <Draggable {...dragHandlers}>
+              <img className="couch" src='https://i.imgur.com/c5W0zAX.png' alt='couch' />
+            </Draggable>
+
           </div>
         </div>
           <div className="furn-list">
@@ -55,6 +96,8 @@ class RoomSingle extends Component {
  }
 
   render(){
+
+
     return(
     <div>
       {this.renderRoomOrLoading()}

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Furniture from './Furniture'
 
-
 //Try grid list in material-ui
 class FurnitureList  extends Component {
   state = {
@@ -29,13 +28,14 @@ class FurnitureList  extends Component {
 		} else return <p>Loading...</p>
 	}
 
-
   render(){
     return(
     <>
+
       <div className='furniture-list'>
   			{this.renderFurniture()}
   		</div>
+
     </>
     )
   }

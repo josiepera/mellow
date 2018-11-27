@@ -45,24 +45,33 @@ class Furniture extends Component {
     }));
   }
 
+
   render(){
     const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
     const {deltaPosition, controlledPosition} = this.state;
 
 	return(
-		<>
-			<div>
-					<div className="furn-inlist" onClick={this.toggleInfo.bind(this)}>
-            <h2>{this.props.furniture.name}</h2>
-    			</div>
+		 <>
+			  <div>
+
+
+
+           <div className="furn-inlist" onClick={this.toggleInfo.bind(this)}>
+             <h2>{this.props.furniture.name}</h2>
+    			 </div>
+
+
           {this.state.show &&
-          <Draggable {...dragHandlers}>
+          <Draggable bounds=".room-pic" {...dragHandlers}>
             <img className="furn-pic"
             src={this.props.furniture.url}
             alt="furniture" />
           </Draggable>
-        }
-					<FooterNav/>
+          }
+
+
+
+          <FooterNav/>
 			</div>
 		</>
 	)
