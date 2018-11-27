@@ -35,13 +35,15 @@ class ExploreAdd extends Component{
 	      url:this.state.url,
         title: this.state.title,
         size: this.state.size,
-        description: this.state.description
+        description: this.state.description,
 	  }).then(res => {
 	  	this.setState({
 	  		newId: res.data.data.id,
         fireRedirect:true
 	  	})
 	  })
+    .catch(err => console.log(err));
+    e.target.reset();
 	}
 
   render(){

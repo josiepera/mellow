@@ -86,10 +86,10 @@ h1{
 .explore-list{
 
 }
-img{
+/* img{
   height: 100%;
   width: 100%;
-}
+} */
 .room-layout{
   /* margin-left: 30%; */
   /* width: 306px !important;
@@ -116,7 +116,9 @@ img{
 }
 .ex-inlist img{
   border-radius: 20px;
-  max-width: 100%;
+  /* max-width: 100%;
+  max-width: 160px; */
+max-height: 120px !important;
 }
 .ex-inlist h2{
   font-size: 70%;
@@ -159,6 +161,11 @@ img{
   margin: auto;
   background: white;
   align-items: center;
+}
+
+.inner img {
+  height: 100%;
+  width: 100%;
 }
 .couch{
   position: relative;

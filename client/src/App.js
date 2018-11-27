@@ -16,11 +16,11 @@ class App extends Component {
         <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/tutorial" component={Tutorial} />
+            <Route exact path="/add" component={ExploreAdd}/>
             <Route exact path="/rooms" component={RoomList} />
             <Route exact path="/rooms/:id" component={RoomSingle} />
             <Route exact path="/explore" component={ExploreList} />
             <Route exact path="/explore/:id" component={ExploreSingle} />
-            <Route exact path="/add" component={ExploreAdd}/>
         </Switch>
       </Router>
     );

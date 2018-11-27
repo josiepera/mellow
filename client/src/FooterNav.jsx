@@ -8,6 +8,7 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import Search from "@material-ui/icons/Search";
 import Home from "@material-ui/icons/Home";
 import AccountCircle from "@material-ui/icons/AccountCircle"
+import AddBox from "@material-ui/icons/AddBox";
 
 class FooterNav extends Component {
   state = {
@@ -37,6 +38,11 @@ class FooterNav extends Component {
         <BottomNavigationAction label="My Rooms" icon={<AccountCircle />}
         component={Link}
         to="/rooms"
+        />
+
+        <BottomNavigationAction label="Add" icon={<AddBox />}
+        component={Link}
+        to="/add"
         />
 
       </BottomNavigation>
