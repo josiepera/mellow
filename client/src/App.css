@@ -53,6 +53,7 @@ a:visited {
 }
 .prof-header{
   margin-bottom: 30px;
+  margin-left: 12px;
 }
 .back{
   margin-right: 15px;
@@ -67,6 +68,17 @@ h1{
   margin-top: 100px;
   margin-bottom: 80px;
 }
+.room-inlist{
+  /* flex-direction: column;
+  justify-content: space-between; */
+  border: 1px solid black !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+.room-inlist svg{
+  align-self: flex-end;
+}
 
 .explore-list{
 
@@ -77,12 +89,13 @@ img{
 }
 
 .ex-inlist{
-    /* border: 1px solid black; */
+    /* width: 30%;
+    margin-left: 30px; */
     width: 30%;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .ex-inlist img{
   border-radius: 20px;
@@ -103,7 +116,7 @@ img{
 }
 .explore-container{
   display: flex;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 
 }
 .room-inlist{
@@ -128,11 +141,7 @@ img{
   bottom: 25%;
   margin: auto;
   background: white;
-  /* border-radius: 25px; */
-  /* display: flex; */
-  /* flex-direction: column; */
   align-items: center;
-  /* border: 2px solid black; */
 }
 
 .prof-info{

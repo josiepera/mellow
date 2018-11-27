@@ -51,7 +51,7 @@ class ExploreSingle extends Component {
           </div>
        </div>
      )
-   } else return <img className="loading" src="https://i.imgur.com/EATfJf4.gif" alt="...loading"></img>
+   } else return <img className="loading" src="http://www.tbaf.org.tw/event/2016safe/imgs/loader1.gif" alt="...loading"></img>
   }
   render(){
     return(

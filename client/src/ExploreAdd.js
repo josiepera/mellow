@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
+import FooterNav from './FooterNav';
 
 class ExploreAdd extends Component{
   state = {
@@ -117,9 +118,11 @@ class ExploreAdd extends Component{
               onChange={(e) => this.handleInputChange(e)}
               />
           </label>
+          <input type="submit" value="Submit!" />
         </form>
         ? <Redirect push to={`/explore/${this.state.newId}`} />
           : ''}
+        <FooterNav/>
       </div>
 
     )
