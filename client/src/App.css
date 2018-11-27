@@ -68,6 +68,9 @@ h1{
   margin-top: 100px;
   margin-bottom: 80px;
 }
+.inner{
+
+}
 .room-inlist{
   /* flex-direction: column;
   justify-content: space-between; */
@@ -87,8 +90,14 @@ img{
   height: 100%;
   width: 100%;
 }
-.room-layout img{
-  width: 100% !important;
+.room-layout{
+  /* width: 306px !important;
+  height: 311px !important; */
+  /* position: fixed; */
+}
+.room-pic{
+  width: 306px !important;
+  height: 311px !important;
 }
 
 .ex-inlist{
@@ -148,17 +157,45 @@ img{
 }
 .couch{
   position: absolute;
-  max-height: 30%;
-  max-width: 30%;
-  left: 25%;
-  right: 25%;
-  top: 25%;
-  bottom: 25%;
+  max-height: 85px;
+  max-width: 85px;
+  top: 148px;
+  left: 10px;
+  margin: auto;
+  background: white;
+  align-items: center;
+  /* transform: translate(8px, -380px) !important; */
+}
+.bed{
+  position: absolute;
+  max-height: 125px;
+  max-width: 100px;
+  top: 150px;
+  left: 194px;
   margin: auto;
   background: white;
   align-items: center;
 }
-
+.table{
+  position: absolute;
+  max-height: 85px;
+  max-width: 85px;
+  top: 360px;;
+  left: 10px;
+  margin: auto;
+  background: white;
+  align-items: center;
+}
+.dresser{
+  position: absolute;
+  max-height: 50px;
+  max-width: 105px;
+  top: 395px;
+  left: 190px;
+  margin: auto;
+  background: white;
+  align-items: center;
+}
 .prof-info{
   margin-left: 12px;
 }

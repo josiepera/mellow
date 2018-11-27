@@ -62,7 +62,7 @@ class Furniture extends Component {
 
 
           {this.state.show &&
-          <Draggable bounds=".room-pic" {...dragHandlers}>
+          <Draggable {...dragHandlers}>
             <img className="furn-pic"
             src={this.props.furniture.url}
             alt="furniture" />
