@@ -91,9 +91,14 @@ img{
   width: 100%;
 }
 .room-layout{
+  /* margin-left: 30%; */
   /* width: 306px !important;
-  height: 311px !important; */
-  /* position: fixed; */
+  height: 311px !important;
+   /*position: fixed; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 .room-pic{
   width: 306px !important;
@@ -156,42 +161,43 @@ img{
   align-items: center;
 }
 .couch{
-  position: absolute;
+  position: relative;
+
   max-height: 85px;
   max-width: 85px;
-  top: 148px;
-  left: 10px;
+  top: -376px;
+  left: -99px;
   margin: auto;
   background: white;
   align-items: center;
   /* transform: translate(8px, -380px) !important; */
 }
 .bed{
-  position: absolute;
+  position: relative;
   max-height: 125px;
   max-width: 100px;
-  top: 150px;
-  left: 194px;
+  top: -529px;
+  left: 94px;
   margin: auto;
   background: white;
   align-items: center;
 }
 .table{
-  position: absolute;
+  position: relative;
   max-height: 85px;
   max-width: 85px;
-  top: 360px;;
-  left: 10px;
+  top: -492px;
+left: -96px;
   margin: auto;
   background: white;
   align-items: center;
 }
 .dresser{
-  position: absolute;
+  position: relative;
   max-height: 50px;
   max-width: 105px;
-  top: 395px;
-  left: 190px;
+  top: -608px;
+  left: 91px;
   margin: auto;
   background: white;
   align-items: center;
