@@ -3,6 +3,12 @@
 .App {
   text-align: center;
 }
+body {
+  font-family: 'Merriweather', serif;
+  /* background-color: #fafafa; */
+  background-color: white;
+}
+
 .home-page{
   background-color: #fae7dc;
   height: 100vh;
@@ -19,7 +25,36 @@
   width: 180px;
   height: 180px;
 }
+.enter-tutorial{
+  /* border: solid black 1px; */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.enter-tutorial img {
+  height: 253px;
+  width: 230px;
+}
+.enter-tutorial a{
+  text-align: center;
+  margin-top: 40px;
+}
+.tutorial-images{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+.save{
+  max-width: 188px !important;
+}
+.create{
 
+}
 nav {
 	width: 100%;
   background: #fafafa;
@@ -29,10 +64,7 @@ nav {
   bottom: 0;
   margin-right: 50px;
 }
-body {
-  font-family: 'Merriweather', serif;
-  background-color: #fafafa;
-}
+
 
 a{
   text-decoration: none;
@@ -55,7 +87,12 @@ a:visited {
   top: 0;
   margin-right: 50px;
   text-align: center;
+  justify-content: center;
+  height: 46px;
   /* vertical-align: middle; */
+  }
+  .header img{
+    max-width: 58px;
   }
 
 .profile-pic{
@@ -102,6 +139,12 @@ h1{
 
 .explore-list{
 /* display:flex; */
+ /* display: flex;
+ flex-wrap: wrap; */
+ /* display: flex;
+ flex-wrap: wrap;
+ justify-content: center; */
+
 }
 
 /* img{
@@ -124,15 +167,16 @@ h1{
 }
 
 .ex-inlist{
-    /* width: 30%;
-    margin-left: 30px; */
-    display:flex;
+    /* display:flex;
     flex-direction:row;
     width: 30%;
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
 }
 .ex-inlist img{
   border-radius: 20px;
@@ -229,6 +273,21 @@ left: -96px;
   background: white;
   align-items: center;
 }
+.rug {
+  max-height: 50px;
+  max-width: 105px;
+  top: -842px;
+  left: 92px;
+  position: relative;
+}
+.tv{
+  max-height: 109px;
+  max-width: 28px;
+  top: -1007px;
+  left: -53px;
+  position: relative;
+}
+
 .prof-info{
   margin-left: 12px;
 }
@@ -257,8 +316,10 @@ left: -96px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: -11px;
 }
 h4{
+  font-weight: bold;
   margin-right: 7px;
 }
 .sugg-header h4 {

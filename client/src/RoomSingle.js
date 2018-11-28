@@ -78,7 +78,9 @@ class RoomSingle extends Component {
       <>
        <div className="header">
         <Link to={`/rooms`}><div className="back">{<ArrowBackIos />}</div></Link>
-   			<h1>{this.state.room.type}</h1>
+        <div>
+   			  <h1>{this.state.room.type}</h1>
+        </div>
    		 </div>
        <div className="inner">
         <div className="top">
@@ -122,6 +124,23 @@ class RoomSingle extends Component {
                   </Draggable>
                   }
 
+            <div onClick={this.toggleBed.bind(this)}>
+              <h2>Rug</h2>
+            </div>
+                  {this.state.show &&
+                  <Draggable {...dragHandlers}>
+                  <img className="rug" src='https://i.imgur.com/tGb0Q1a.png' alt='rug' />
+                  </Draggable>
+                  }
+
+              <div onClick={this.toggleBed.bind(this)}>
+                 <h2>Televisionr</h2>
+              </div>
+                  {this.state.show &&
+                  <Draggable {...dragHandlers}>
+                  <img className="tv" src='https://i.imgur.com/CkqPcin.png' alt='tv' />
+                  </Draggable>
+                  }
           </div>
 
         </div>
