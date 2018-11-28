@@ -49,6 +49,20 @@ class ExploreSingle extends Component {
             </div>
             <p>{this.state.explore.description}</p>
           </div>
+
+          <div className="suggestions">
+						<img src="https://i.imgur.com/yJoILPV.jpg" alt="shelf"/>
+						<div className="side">
+						 <div className="sugg-header">
+								<h4>Algot</h4>
+								<p>Ikea</p>
+							</div>
+							<p>Frame with 6 mesh baskets/top shelf</p>
+							<p className="desc">A versitle system for storage of any kind.
+							Stack frames together and complete with shelves, clothes-racks, or baskets.</p>
+						</div>
+	         </div>
+
        </div>
      )
    } else return <img className="loading" src="http://www.tbaf.org.tw/event/2016safe/imgs/loader1.gif" alt="...loading"></img>
