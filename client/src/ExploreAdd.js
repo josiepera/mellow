@@ -6,9 +6,9 @@ import FooterNav from './FooterNav';
 class ExploreAdd extends Component{
   state = {
     newId: "",
-    profile_url: "",
     name: "",
     location: "",
+    profile_url: "",
     url: "",
     title: "",
     size: "",
@@ -25,13 +25,14 @@ class ExploreAdd extends Component{
 	  }))
 	}
 
+
+
   handleFormSubmit(e){
-	  // stop form from refreshing the page
 	  e.preventDefault()
 	  axios.post('/explore',  {
+        name:this.state.name,
+        location:this.state.location,
 	      profile_url: this.state.profile_url,
-	      name:this.state.name,
-	      location:this.state.location,
 	      url:this.state.url,
         title: this.state.title,
         size: this.state.size,
@@ -122,6 +123,7 @@ class ExploreAdd extends Component{
           </label>
           <input type="submit" value="Submit!" />
         </form>
+        {this.state.fireRedirect
         ? <Redirect push to={`/explore/${this.state.newId}`} />
           : ''}
         <FooterNav/>
