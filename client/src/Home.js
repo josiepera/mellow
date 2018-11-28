@@ -4,10 +4,15 @@ import { Link } from 'react-router-dom';
 class Home extends Component {
   render(){
     return(
-      <div>
-        <h1>Mellow</h1>
-        <Link to={`/tutorial/`}><button>Enter</button></Link>
+    <>
+      <div className="home-page">
+      <Link to={`/tutorial/`}>
+        <div className="enter">
+          <img src="https://i.imgur.com/B2egNdE.png" alt="home"/>
+        </div>
+        </Link>
       </div>
+    </>
     )
   }
 }

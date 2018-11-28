@@ -3,6 +3,22 @@
 .App {
   text-align: center;
 }
+.home-page{
+  background-color: #fae7dc;
+  height: 100vh;
+}
+.enter{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.enter img{
+  width: 180px;
+  height: 180px;
+}
 
 nav {
 	width: 100%;
@@ -15,6 +31,7 @@ nav {
 }
 body {
   font-family: 'Merriweather', serif;
+  background-color: #fafafa;
 }
 
 a{
