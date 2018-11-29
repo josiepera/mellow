@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS explore (
   profile_url VARCHAR(10000) NOT NULL,
   url TEXT NOT NULL,
   title TEXT NOT NULL,
-  size TEXT NOT NULL,
+  size INTEGER,
   description TEXT NOT NULL
 );
 

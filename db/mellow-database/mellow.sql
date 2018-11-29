@@ -32,7 +32,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/YsKVAh4.jpg',
   'https://i.imgur.com/8Vq1hHP.jpg',
   'Organized Living Dream',
-  '50 Sq.Ft.',
+  50,
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ),
 (
@@ -41,7 +41,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/4Ys763V.jpg',
   'https://i.imgur.com/NgkAGZc.jpg',
   'Organized Living Dream',
-  '50 Sq.Ft.',
+  50,
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ),
 (
@@ -50,7 +50,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/HRBCgtR.jpg',
   'https://i.imgur.com/1J6Laa0.jpg',
   'Organized Living Dream',
-  '50 Sq.Ft.',
+  50,
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ),
 (
@@ -59,7 +59,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/gsLgACg.jpg',
   'https://i.imgur.com/kVCyg0I.jpg',
   'Organized Living Dream',
-  '50 Sq.Ft.',
+  50,
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ),
 (
@@ -68,7 +68,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/kcJd7Aj.jpg',
   'https://www.livingspaces.com/globalassets/images/inspiration/modern_livingroom_110217_1.jpg',
   'Organized Living Dream',
-  '50 Sq.Ft.',
+  50,
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ),
 (
@@ -77,7 +77,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/cPZtse3.jpg',
   'https://i.imgur.com/7hjFNbE.jpg',
   'Organized Living Dream',
-  '50 Sq.Ft.',
+  50,
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 )
 ;
