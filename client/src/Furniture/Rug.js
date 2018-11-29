@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FooterNav from '../FooterNav';
 import Draggable from 'react-draggable';
-
+import Chip from '@material-ui/core/Chip';
 
 class Rug extends Component{
   state = {
@@ -49,11 +49,15 @@ class Rug extends Component{
 
     return(
     <>
-      <div className="name-conatainer" onClick={this.toggleInfo.bind(this)}>
-        <h2 className="rug-container">Rug</h2>
+      <div className="rug-container" onClick={this.toggleInfo.bind(this)}>
+        <Chip
+         label="Rug"
+         color="primary"
+         variant="outlined"
+         />
       </div>
             {this.state.show &&
-            <Draggable {...dragHandlers}>
+            <Draggable defaultPosition={{x: 82, y: 162}} {...dragHandlers}>
             <img className="rug" src='https://res.cloudinary.com/jperalta/image/upload/v1543508577/rug.svg' alt='rug' />
             </Draggable>
             }

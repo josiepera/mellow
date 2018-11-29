@@ -59,7 +59,7 @@ class Bed extends Component{
           />
       </div>
          {this.state.show &&
-          <Draggable {...dragHandlers}>
+          <Draggable defaultPosition={{x: 84, y: 8}}{...dragHandlers}>
           <img className="bed" src='https://res.cloudinary.com/jperalta/image/upload/v1543508577/bed_2.svg' alt='bed' />
           </Draggable>
           }

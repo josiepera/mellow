@@ -239,8 +239,8 @@ h1{
   top: -376px;
   left: -99px; */
   position: absolute;
-  top: 141px;
-  left: 69px;
+  /* top: 141px;
+  left: 69px; */
   max-height: 85px;
   max-width: 85px;
   margin: auto;
@@ -250,8 +250,8 @@ h1{
 }
 .bed{
   position: absolute;
-  top: 141px;
-  left: 237px;
+  /* top: 141px;
+  left: 237px; */
   /* position: relative; */
   max-height: 141px;
   max-width: 120px;
@@ -268,15 +268,15 @@ h1{
   position:absolute;
   max-height: 88px;
 max-width: 118px;
-  top: 350px;
-  left: 69px;
+  /* top: 350px;
+  left: 69px; */
   margin: auto;
   background: white;
   align-items: center;
 }
 .dresser{
-  top: 390px;
-  left: 250px;
+  /* top: 390px;
+  left: 250px; */
   position: absolute;
   /* position: relative; */
   max-height: 50px;
@@ -293,8 +293,8 @@ max-width: 118px;
   /* top: -842px;
   left: 92px;
   position: relative; */
-  top: 294px;
-  left: 243px;
+  /* top: 294px;
+  left: 243px; */
   position: absolute;
 
 }
@@ -305,8 +305,8 @@ max-width: 118px;
   left: -53px;
   position: relative;*/
   position: absolute;
-  top: 227px;
-  left: 150px;
+  /* top: 227px;
+  left: 150px; */
 }
 
 .prof-info{
@@ -390,21 +390,24 @@ h2{
 
 }
 .bed-container{
-  margin-left: -93px;
-  margin-top: -29px;
+  margin-left: -175px;
+  margin-top: -32px;
 }
 .couch-container{
   margin-left: -300px;
   margin-top: 17px;
 }
 .dresser-container{
+  margin-left: 107px;
+  margin-top: -31px;
 
 }
 .rug-container{
 
 }
 .table-container{
-
+ margin-left: -56px;
+ margin-top: -31px;
 }
 .tv.container{
 

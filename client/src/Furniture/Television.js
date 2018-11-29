@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FooterNav from '../FooterNav';
 import Draggable from 'react-draggable';
-
+import Chip from '@material-ui/core/Chip';
 
 class Television extends Component{
   state = {
@@ -50,10 +50,14 @@ class Television extends Component{
     return(
     <>
       <div className="name-conatainer" onClick={this.toggleInfo.bind(this)}>
-        <h2 className='tv-container'>Television</h2>
+        <Chip
+          label="Television"
+          color="primary"
+          variant="outlined"
+        />
       </div>
         {this.state.show &&
-        <Draggable {...dragHandlers}>
+        <Draggable defaultPosition={{x: -50, y: 92}} {...dragHandlers}>
         <img className="tv" src='https://res.cloudinary.com/jperalta/image/upload/v1543508577/tv.svg' alt='tv' />
         </Draggable>
         }
