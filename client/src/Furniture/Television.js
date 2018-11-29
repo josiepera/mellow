@@ -50,7 +50,7 @@ class Television extends Component{
     return(
     <>
       <div className="name-conatainer" onClick={this.toggleInfo.bind(this)}>
-        <h2 className='tv-name'>Television</h2>
+        <h2 className='tv-container'>Television</h2>
       </div>
         {this.state.show &&
         <Draggable {...dragHandlers}>

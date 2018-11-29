@@ -389,21 +389,23 @@ h3{
 h2{
 
 }
-.bed-name{
+.bed-container{
+  margin-left: -93px;
+  margin-top: -29px;
+}
+.couch-container{
+  margin-left: -300px;
+  margin-top: 17px;
+}
+.dresser-container{
 
 }
-.couch-name{
+.rug-container{
 
 }
-.dresser-name{
+.table-container{
 
 }
-.rug-name{
+.tv.container{
 
-}
-.table-name{
-
-}
-.tv.name{
-  
 }

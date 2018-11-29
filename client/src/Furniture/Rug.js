@@ -50,7 +50,7 @@ class Rug extends Component{
     return(
     <>
       <div className="name-conatainer" onClick={this.toggleInfo.bind(this)}>
-        <h2 className="rug-name">Rug</h2>
+        <h2 className="rug-container">Rug</h2>
       </div>
             {this.state.show &&
             <Draggable {...dragHandlers}>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FooterNav from '../FooterNav';
 import Draggable from 'react-draggable';
+import Chip from '@material-ui/core/Chip';
 
 
 class Couch extends Component{
@@ -43,14 +44,22 @@ class Couch extends Component{
     const {x, y} = controlledPosition;
     this.setState({controlledPosition: {x, y: y - 10}});
   }
+
+
+
   render(){
     const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
     const {deltaPosition, controlledPosition} = this.state;
 
     return(
     <>
-      <div className="name-conatainer" onClick={this.toggleInfo.bind(this)}>
-        <h2 className="couch-name">Couch</h2>
+      <div className="couch-container" onClick={this.toggleInfo.bind(this)}>
+          <Chip
+            label="Couch"
+            color="primary"
+            variant="outlined"
+          />
+
       </div>
         {this.state.show &&
           <Draggable {...dragHandlers}>

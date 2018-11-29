@@ -50,7 +50,7 @@ class Dresser extends Component{
     return(
     <>
       <div className="name-conatainer" onClick={this.toggleInfo.bind(this)}>
-        <h2 className="dresser-name">Dresser</h2>
+        <h2 className="dresser-container">Dresser</h2>
       </div>
           {this.state.show &&
           <Draggable {...dragHandlers}>
