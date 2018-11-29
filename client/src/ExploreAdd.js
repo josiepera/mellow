@@ -77,7 +77,7 @@ class ExploreAdd extends Component{
               type="text"
               placeholder="Location"
               name="location"
-              value={this.state.profile_url}
+              value={this.state.location}
               onChange={(e) => this.handleInputChange(e)}
               />
           </label>

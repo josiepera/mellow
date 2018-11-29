@@ -193,9 +193,9 @@ h1{
   max-height: 120px !important;
 }
 .ex-inlist h2{
-  font-size: 70%;
-  margin-bottom: 0;
-  margin-top: 0;
+  font-size: 70% !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 .ex-inlist p{
   font-size: 50%;
@@ -235,60 +235,78 @@ h1{
   width: 100%;
 }
 .couch{
-  position: relative;
-
+  /* position: relative;
+  top: -376px;
+  left: -99px; */
+  position: absolute;
+  top: 141px;
+  left: 69px;
   max-height: 85px;
   max-width: 85px;
-  top: -376px;
-  left: -99px;
   margin: auto;
   background: white;
   align-items: center;
   /* transform: translate(8px, -380px) !important; */
 }
 .bed{
-  position: relative;
-  max-height: 125px;
-  max-width: 100px;
-  top: -529px;
-  left: 94px;
+  position: absolute;
+  top: 141px;
+  left: 237px;
+  /* position: relative; */
+  max-height: 141px;
+  max-width: 120px;
+  /* top: -529px;
+  left: 94px; */
   margin: auto;
   background: white;
   align-items: center;
 }
 .table{
-  position: relative;
-  max-height: 85px;
-  max-width: 85px;
+  /* position: relative;
   top: -492px;
-  left: -96px;
+  left: -96px; */
+  position:absolute;
+  max-height: 88px;
+max-width: 118px;
+  top: 350px;
+  left: 69px;
   margin: auto;
   background: white;
   align-items: center;
 }
 .dresser{
-  position: relative;
+  top: 390px;
+  left: 250px;
+  position: absolute;
+  /* position: relative; */
   max-height: 50px;
   max-width: 105px;
-  top: -608px;
-  left: 91px;
+  /* top: -608px;
+  left: 91px; */
   margin: auto;
   background: white;
   align-items: center;
 }
 .rug {
-  max-height: 50px;
-  max-width: 105px;
-  top: -842px;
+  max-height: 70px;
+  max-width: 108px;
+  /* top: -842px;
   left: 92px;
-  position: relative;
+  position: relative; */
+  top: 294px;
+  left: 243px;
+  position: absolute;
+
 }
 .tv{
-  max-height: 109px;
-  max-width: 28px;
-  top: -1007px;
+  max-height: 107px;
+  max-width: 31px;
+  /* top: -1007px;
   left: -53px;
-  position: relative;
+  position: relative;*/
+  position: absolute;
+  top: 227px;
+  left: 150px;
 }
 
 .prof-info{
@@ -313,6 +331,7 @@ h1{
 .bottom-info p{
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 13px;
 }
 
 .bottom-header{
@@ -360,4 +379,31 @@ h4{
 .desc{
   margin-top:5px !important;
   color: black !important;
+}
+h3{
+  font-size: 15px;
+  border-bottom: 1px solid black;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+h2{
+
+}
+.bed-name{
+
+}
+.couch-name{
+
+}
+.dresser-name{
+
+}
+.rug-name{
+
+}
+.table-name{
+
+}
+.tv.name{
+  
 }

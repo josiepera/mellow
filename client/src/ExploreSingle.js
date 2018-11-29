@@ -45,11 +45,12 @@ class ExploreSingle extends Component {
           <div className="bottom-info">
             <div className="bottom-header">
               <h4>{this.state.explore.title}</h4>
-              <p>{this.state.explore.size}</p>
+              <p>{this.state.explore.size} Sq.Ft.</p>
             </div>
             <p>{this.state.explore.description}</p>
           </div>
 
+          <h3>Buy this Look</h3>
           <div className="suggestions">
 						<img src="https://i.imgur.com/yJoILPV.jpg" alt="shelf"/>
 						<div className="side">

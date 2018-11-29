@@ -5,13 +5,18 @@ import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
 import { Link } from 'react-router-dom';
 // import FurnitureList from './FurnitureList';
 import Draggable from 'react-draggable';
+import Rug from './Furniture/Rug';
+import Television from './Furniture/Television';
+import Dresser from './Furniture/Dresser';
+import Table from './Furniture/Table';
+import Bed from './Furniture/Bed';
+import Couch from './Furniture/Couch';
 
 class RoomSingle extends Component {
   state = {
 		room: null,
 		apiDataLoaded: false,
     show: true,
-    show_bed: true,
     deltaPosition: {
       x: 0, y: 0
     },
@@ -25,12 +30,6 @@ class RoomSingle extends Component {
       show: !prevState.show
     }));
   }
-  toggleBed = () => {
-    this.setState(prevState => ({
-      show_bed: !prevState.show_bed
-    }));
-  }
-
 
   componentDidMount() {
   console.log('this is props from RoomSingle: ', this.props)
@@ -88,59 +87,13 @@ class RoomSingle extends Component {
           <div className="room-layout">
             <img className="room-pic"src={this.state.room.url} alt={this.state.room.type} />
 
-            <div onClick={this.toggleInfo.bind(this)}>
-              <h2>Couch</h2>
-     			  </div>
-                {this.state.show &&
-                  <Draggable {...dragHandlers}>
-                  <img className="couch" src='https://i.imgur.com/c5W0zAX.png' alt='couch' />
-                  </Draggable>
-                }
 
-            <div onClick={this.toggleBed.bind(this)}>
-              <h2>Bed</h2>
-     			  </div>
-                 {this.state.show &&
-                  <Draggable {...dragHandlers}>
-                  <img className="bed" src='https://i.imgur.com/m3NDjpZ.png' alt='bed' />
-                  </Draggable>
-                  }
-
-            <div onClick={this.toggleBed.bind(this)}>
-              <h2>table</h2>
-           	</div>
-                  {this.state.show &&
-                  <Draggable {...dragHandlers}>
-                  <img className="table" src='https://i.imgur.com/VPjTigf.png' alt='table' />
-                  </Draggable>
-                  }
-
-            <div onClick={this.toggleBed.bind(this)}>
-              <h2>Dresser</h2>
-            </div>
-                  {this.state.show &&
-                  <Draggable {...dragHandlers}>
-                  <img className="dresser" src='https://i.imgur.com/fkmp28u.png' alt='dresser' />
-                  </Draggable>
-                  }
-
-            <div onClick={this.toggleBed.bind(this)}>
-              <h2>Rug</h2>
-            </div>
-                  {this.state.show &&
-                  <Draggable {...dragHandlers}>
-                  <img className="rug" src='https://i.imgur.com/tGb0Q1a.png' alt='rug' />
-                  </Draggable>
-                  }
-
-              <div onClick={this.toggleBed.bind(this)}>
-                 <h2>Televisionr</h2>
-              </div>
-                  {this.state.show &&
-                  <Draggable {...dragHandlers}>
-                  <img className="tv" src='https://i.imgur.com/CkqPcin.png' alt='tv' />
-                  </Draggable>
-                  }
+            <Couch/>
+            <Bed/>
+            <Table/>
+            <Dresser/>
+            <Rug/>
+            <Television/>
           </div>
 
         </div>
