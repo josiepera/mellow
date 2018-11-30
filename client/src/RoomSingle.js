@@ -98,7 +98,6 @@ class RoomSingle extends Component {
 
         </div>
           <div className="furn-list">
-            FurnitureList
             <p>{this.state.room.description}</p>
           </div>
 
@@ -112,7 +111,7 @@ class RoomSingle extends Component {
 
 
     return(
-    <div>
+    <div className="room-single">
       {this.renderRoomOrLoading()}
       <FooterNav/>
     </div>

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import FooterNav from '../FooterNav';
 import Draggable from 'react-draggable';
-import Chip from '@material-ui/core/Chip';
+// import Chip from '@material-ui/core/Chip';
+import Button from '@material-ui/core/Button';
 
 class Table extends Component{
   state = {
@@ -50,11 +51,9 @@ class Table extends Component{
     return(
     <>
       <div className="table-container" onClick={this.toggleInfo.bind(this)}>
-        <Chip
-          label="Table"
-          color="primary"
-          variant="outlined"
-          />
+      <Button variant="contained" size="small" color="primary">
+        Desk
+      </Button>
       </div>
           {this.state.show &&
           <Draggable defaultPosition={{x: -82, y: 212}} {...dragHandlers}>

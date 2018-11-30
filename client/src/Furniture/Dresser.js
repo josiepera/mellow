@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import FooterNav from '../FooterNav';
 import Draggable from 'react-draggable';
-import Chip from '@material-ui/core/Chip';
+// import Chip from '@material-ui/core/Chip';
+import Button from '@material-ui/core/Button';
 
 class Dresser extends Component{
   state = {
@@ -50,11 +51,9 @@ class Dresser extends Component{
     return(
     <>
       <div className="dresser-container" onClick={this.toggleInfo.bind(this)}>
-        <Chip
-          label="Dresser"
-          color="primary"
-          variant="outlined"
-         />
+      <Button variant="contained" size="small" color="primary">
+        Dresser
+      </Button>
       </div>
           {this.state.show &&
           <Draggable defaultPosition={{x: 82, y: 250}}{...dragHandlers}>

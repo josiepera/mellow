@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import FooterNav from '../FooterNav';
 import Draggable from 'react-draggable';
-import Chip from '@material-ui/core/Chip';
-
+// import Chip from '@material-ui/core/Chip';
+import Button from '@material-ui/core/Button';
 
 class Couch extends Component{
   state = {
@@ -54,11 +54,9 @@ class Couch extends Component{
     return(
     <>
       <div className="couch-container" onClick={this.toggleInfo.bind(this)}>
-          <Chip
-            label="Couch"
-            color="primary"
-            variant="outlined"
-          />
+      <Button variant="contained" size="small" color="primary">
+        Couch
+      </Button>
 
       </div>
         {this.state.show &&

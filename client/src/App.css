@@ -8,7 +8,9 @@ body {
   /* background-color: #fafafa; */
   background-color: white;
 }
-
+/* html, body {
+  overflow: hidden !important;
+} */
 .home-page{
   background-color: #fae7dc;
   height: 100vh;
@@ -390,25 +392,29 @@ h2{
 
 }
 .bed-container{
-  margin-left: -175px;
-  margin-top: -32px;
+  margin-left: -77px;
+    margin-top: -32px;
 }
 .couch-container{
-  margin-left: -300px;
-  margin-top: 17px;
+  margin-left: -231px;
+    margin-top: 17px;
+
 }
 .dresser-container{
-  margin-left: 107px;
-  margin-top: -31px;
+  margin-left: 231px;
+      margin-top: -31px;
 
 }
 .rug-container{
-
+  margin-left: -151px;
+      margin-top: 2px;
 }
 .table-container{
- margin-left: -56px;
- margin-top: -31px;
-}
-.tv.container{
+  margin-left: 78px;
+  margin-top: -31px;
 
+}
+.tv-container{
+  margin-left: 23px;
+margin-top: -32px;
 }

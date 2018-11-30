@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import FooterNav from '../FooterNav';
 import Draggable from 'react-draggable';
-import Chip from '@material-ui/core/Chip';
+// import Chip from '@material-ui/core/Chip';
+import Button from '@material-ui/core/Button';
+
 
 class Television extends Component{
   state = {
@@ -49,12 +51,10 @@ class Television extends Component{
 
     return(
     <>
-      <div className="name-conatainer" onClick={this.toggleInfo.bind(this)}>
-        <Chip
-          label="Television"
-          color="primary"
-          variant="outlined"
-        />
+      <div className="tv-container" onClick={this.toggleInfo.bind(this)}>
+      <Button variant="contained" size="small" color="primary">
+        Television
+      </Button>
       </div>
         {this.state.show &&
         <Draggable defaultPosition={{x: -50, y: 92}} {...dragHandlers}>
