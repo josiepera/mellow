@@ -24,7 +24,6 @@ INSERT INTO furniture (room, couch_name, couch_url, bed_name, bed_url, table_nam
   1
 );
 
-
 INSERT INTO explore (name, location, profile_url, url, title, size, description) VALUES
 (
   'Deborah Clark',
@@ -81,29 +80,3 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 )
 ;
-
-INSERT INTO furniture_list (name, url) VALUES
-(
-  'Couch',
-  'https://i.imgur.com/c5W0zAX.png'
-),
-(
-  'Bed',
-  'https://i.imgur.com/m3NDjpZ.png'
-),
-(
-  'Table',
-  'https://i.imgur.com/VPjTigf.png'
-),
-(
-  'Cabinet',
-  'https://i.imgur.com/fkmp28u.png'
-),
-(
-  'Rug',
-  'https://i.imgur.com/tGb0Q1a.png'
-),
-(
-  'Television',
-  'https://i.imgur.com/CkqPcin.png'
-);

@@ -36,9 +36,3 @@ CREATE TABLE IF NOT EXISTS explore (
   size INTEGER,
   description TEXT NOT NULL
 );
-
-CREATE TABLE IF NOT EXISTS furniture_list (
-  id SERIAL PRIMARY KEY NOT NULL,
-  name TEXT NOT NULL,
-  url VARCHAR(10000) NOT NULL
-);

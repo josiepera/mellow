@@ -3,6 +3,7 @@ import Explore from './Explore'
 import axios from 'axios';
 import FooterNav from './FooterNav'
 
+
 class ExploreList extends Component {
   state = {
       apiDataLoaded: false,
@@ -34,6 +35,9 @@ class ExploreList extends Component {
     return(
     <>
       <div>
+        <div className="header">
+          <img src="https://i.imgur.com/mr5n2en.png" alt="header"/>
+        </div>
         <div className='explore-list'>
   			   {this.renderExplore()}
   		   </div>

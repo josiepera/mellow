@@ -8,9 +8,7 @@ const Explore = (props) => {
 	return(
 		<>
 			<div>
-					<div className="header">
-						<img src="https://i.imgur.com/mr5n2en.png" alt="header"/>
-					</div>
+					
 					<div className="ex-inlist">
 						<Link to={`/explore/${props.explore.id}`}><img src={props.explore.url} alt={props.explore.name}/></Link>
 					 <div className="explore-container">
