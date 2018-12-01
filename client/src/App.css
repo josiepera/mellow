@@ -133,7 +133,7 @@ h1{
 }
 .room-inlist{
   display: flex !important;
-  justify-content: center !important;
+  justify-content: space-around !important;
   text-align: center;
   flex-direction: row;
 
@@ -144,12 +144,17 @@ h1{
   flex-direction: column !important;
   justify-content: space-between !important; */
 }
+
 .room-inlist svg{
   align-self: flex-end;
 }
 
-.foward-arrow{
+.forward-arrow{
   top:50%;
+  align-self: center;
+}
+.add-room img{
+  max-width: 120px;
 }
 .explore-list{
 /* display:flex; */
