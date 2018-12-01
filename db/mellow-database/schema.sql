@@ -36,3 +36,12 @@ CREATE TABLE IF NOT EXISTS explore (
   size INTEGER,
   description TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS furniture_list (
+  id SERIAL PRIMARY KEY NOT NULL,
+  url TEXT NOT NULL,
+  title TEXT NOT NULL,
+  store TEXT NOT NULL,
+  short_desc TEXT NOT NULL,
+  long_desc TEXT NOT NULL
+)

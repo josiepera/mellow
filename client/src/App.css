@@ -11,6 +11,9 @@ body {
 /* html, body {
   overflow: hidden !important;
 } */
+body .room-single{
+  overflow: hidden !important;
+}
 .home-page{
   background-color: #fae7dc;
   height: 100vh;

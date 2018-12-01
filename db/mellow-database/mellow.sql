@@ -80,3 +80,26 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 )
 ;
+
+INSERT INTO furniture_list (url, title, store, short_desc, long_desc) Values
+(
+  'https://i.imgur.com/yJoILPV.jpg',
+  'Algot',
+  'Ikea',
+  'Frame with 6 mesh baskets/top shelf',
+  'A versatile system for the pantry or laundry room.  Stack frames together and complete with shelves, clothes-rails, or baskets'
+),
+(
+  'https://i.imgur.com/MuXsN8D.jpg',
+  'BESTA',
+  'Ikea',
+  'Box, Gray',
+  'A simple solution for storing anything from accesories and intimate items to book or record collections'
+),
+(
+  'https://www.ikea.com/us/en/images/products/mulig-clothes-rack-white__0111585_PE262444_S4.JPG',
+  'Mulig',
+  'Ikea',
+  'Clothes rack',
+  'A perfect way to hang all your clothing in style. Showcase your clothing rather than hiding them.'
+);

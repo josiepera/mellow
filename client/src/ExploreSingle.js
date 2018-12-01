@@ -4,6 +4,7 @@ import axios from 'axios';
 import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
 import { Link } from 'react-router-dom';
 import LocationOn from "@material-ui/icons/LocationOn";
+import FurnitureList from "./FurnitureList"
 
 class ExploreSingle extends Component {
   state = {
@@ -51,19 +52,8 @@ class ExploreSingle extends Component {
           </div>
 
           <h3>Buy this Look</h3>
-          <div className="suggestions">
-						<img src="https://i.imgur.com/yJoILPV.jpg" alt="shelf"/>
-						<div className="side">
-						 <div className="sugg-header">
-								<h4>Algot</h4>
-								<p>Ikea</p>
-							</div>
-							<p>Frame with 6 mesh baskets/top shelf</p>
-							<p className="desc">A versitle system for storage of any kind.
-							Stack frames together and complete with shelves, clothes-racks, or baskets.</p>
-						</div>
-	         </div>
-
+          
+           <FurnitureList/>
        </div>
      )
    } else return <img className="loading" src="http://www.tbaf.org.tw/event/2016safe/imgs/loader1.gif" alt="...loading"></img>

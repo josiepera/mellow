@@ -20,6 +20,11 @@ class Bed extends Component{
     }));
   }
 
+  // handleChange (e) {
+  //      let bed = document.getElementByClassName('bed-container')[];
+  //      bed.style.display = 'none';
+  //  },
+
   handleDrag(e, ui) {
       const {x, y} = this.state.deltaPosition;
       this.setState({

@@ -75,6 +75,7 @@ class RoomSingle extends Component {
    if (this.state.apiDataLoaded) {
      return (
       <>
+      <div className = "room-single">
        <div className="header">
         <Link to={`/rooms`}><div className="back">{<ArrowBackIos />}</div></Link>
         <div>
@@ -86,8 +87,6 @@ class RoomSingle extends Component {
           <h3>{this.state.room.title}</h3>
           <div className="room-layout">
             <img className="room-pic"src={this.state.room.url} alt={this.state.room.type} />
-
-
             <Couch/>
             <Bed/>
             <Table/>
@@ -95,12 +94,12 @@ class RoomSingle extends Component {
             <Rug/>
             <Television/>
           </div>
-
-        </div>
+      </div>
+      
           <div className="furn-list">
             <p>{this.state.room.description}</p>
           </div>
-
+      </div>
        </div>
       </>
      )
