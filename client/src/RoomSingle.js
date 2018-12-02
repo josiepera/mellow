@@ -90,9 +90,9 @@ class RoomSingle extends Component {
           <div className="room-layout">
             <img className="room-pic"src={this.state.room.url} alt={this.state.room.type} />
 
-            <Rotatable>
+
               <Couch/>
-            </Rotatable>
+            
 
             <Bed/>
             <Table/>
