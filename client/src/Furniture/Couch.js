@@ -4,6 +4,7 @@ import Draggable from 'react-draggable';
 // import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 
+
 class Couch extends Component{
   state = {
     show: true,
@@ -60,9 +61,13 @@ class Couch extends Component{
 
       </div>
         {this.state.show &&
+
           <Draggable defaultPosition={{x: -102, y: 5}} {...dragHandlers}>
-          <img className="couch" src='https://res.cloudinary.com/jperalta/image/upload/v1543508577/chair.svg' alt='couch' />
+
+            <img className="couch" src='https://res.cloudinary.com/jperalta/image/upload/v1543508577/chair.svg' alt='couch' />
+
           </Draggable>
+
         }
     </>
     )

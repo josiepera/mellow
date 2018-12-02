@@ -30,27 +30,27 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'Manhattan',
   'https://i.imgur.com/YsKVAh4.jpg',
   'https://i.imgur.com/8Vq1hHP.jpg',
-  'Organized Living Dream',
-  50,
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  'Closet',
+  48,
+  'He walks up to the closet he goes up to the closet Now he is at the closet damn he is opening the closet?'
 ),
 (
   'Morgan Rockwell',
   'Brooklyn',
   'https://i.imgur.com/4Ys763V.jpg',
   'https://i.imgur.com/NgkAGZc.jpg',
-  'Organized Living Dream',
-  50,
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  'Shelves, Shelves, Shelves',
+  140,
+  'With arms wide open under the sunlight welcome to this place Ill show you everything'
 ),
 (
   'Meghan Lourdes',
   'Greater Boston',
   'https://i.imgur.com/HRBCgtR.jpg',
   'https://i.imgur.com/1J6Laa0.jpg',
-  'Organized Living Dream',
-  50,
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  'Boston Bedroom',
+  68,
+  'Blue his house with a blue little window and a blue Corvette and everything is blue for him and himself and everybody around cause he aint got nobody to listen'
 ),
 (
   'Layla Clapton',
@@ -58,8 +58,8 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/gsLgACg.jpg',
   'https://i.imgur.com/kVCyg0I.jpg',
   'Organized Living Dream',
-  50,
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  23,
+  'I tried to give you consolation when your old man had let you down. Like a fool, I fell in love with you, turned my whole world upside down'
 ),
 (
   'Paula Benning',
@@ -67,7 +67,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/kcJd7Aj.jpg',
   'https://www.livingspaces.com/globalassets/images/inspiration/modern_livingroom_110217_1.jpg',
   'Organized Living Dream',
-  50,
+  869,
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 ),
 (
@@ -78,8 +78,34 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'Organized Living Dream',
   50,
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-)
-;
+),
+(
+ 'Evan Smith',
+ 'San Diego',
+ 'https://i.imgur.com/kcJd7Aj.jpg',
+ 'https://i.imgur.com/qoUSPrl.jpg',
+ 'Bedroom',
+ 135,
+ 'Dont think everything must be at the same level.  Add some shelves and drawers mong the hanging clothes. This will help break up space'
+),
+(
+  'Meghan Lourdes',
+  'Greater Boston',
+  'https://i.imgur.com/HRBCgtR.jpg',
+  'https://i.imgur.com/2eIqxIY.jpg',
+  'Pantry Lyfe',
+  49,
+  'Oh baby baby its a wild world, its hard to get by just upon a smile. Oh baby baby its a wild world, and Ill always remember you like a child'
+),
+(
+  'Eugenia Furguson',
+  'New York, NY',
+  'https://i.imgur.com/FyYXB6N.jpg',
+  'https://i.imgur.com/PbvjmQn.jpg',
+  'Bedroom of your dreamz',
+  150,
+  'Would be crazy if this was your bedroom but its not'
+);
 
 INSERT INTO furniture_list (url, title, store, short_desc, long_desc) Values
 (

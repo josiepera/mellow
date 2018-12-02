@@ -11,6 +11,8 @@ import Dresser from './Furniture/Dresser';
 import Table from './Furniture/Table';
 import Bed from './Furniture/Bed';
 import Couch from './Furniture/Couch';
+import Rotatable from 'react-rotatable';
+import 'react-rotatable/dist/css/rotatable.min.css';
 
 class RoomSingle extends Component {
   state = {
@@ -67,7 +69,7 @@ class RoomSingle extends Component {
     const {x, y} = controlledPosition;
     this.setState({controlledPosition: {x, y: y - 10}});
   }
-
+// <Link to={`/rooms`}><div className="back">{<ArrowBackIos />}</div></Link>
 
   renderRoomOrLoading() {
     const dragHandlers = {onStart: this.onStart, onStop: this.onStop};
@@ -77,7 +79,7 @@ class RoomSingle extends Component {
       <>
       <div className = "room-single">
        <div className="header">
-        <Link to={`/rooms`}><div className="back">{<ArrowBackIos />}</div></Link>
+
         <div>
    			  <h1>{this.state.room.type}</h1>
         </div>
@@ -87,7 +89,11 @@ class RoomSingle extends Component {
           <h3>{this.state.room.title}</h3>
           <div className="room-layout">
             <img className="room-pic"src={this.state.room.url} alt={this.state.room.type} />
-            <Couch/>
+
+            <Rotatable>
+              <Couch/>
+            </Rotatable>
+
             <Bed/>
             <Table/>
             <Dresser/>
@@ -95,7 +101,7 @@ class RoomSingle extends Component {
             <Television/>
           </div>
       </div>
-      
+
           <div className="furn-list">
             <p>{this.state.room.description}</p>
           </div>

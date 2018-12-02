@@ -8,9 +8,18 @@ import RoomSingle from './RoomSingle';
 import RoomList from './RoomList';
 import Tutorial from './Tutorial';
 import ExploreAdd from './ExploreAdd';
+// import { AnimatedSwitch } from 'react-router-transition';
 
 class App extends Component {
-  render() {
+
+//   bounce(val) {
+//     return spring(val, {
+//    stiffness: 330,
+//    damping: 22,
+//  });
+// }
+
+  render(){
     return (
       <Router>
         <Switch>
@@ -24,7 +33,7 @@ class App extends Component {
         </Switch>
       </Router>
     );
-  }
+}
 }
 
 

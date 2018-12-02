@@ -23,12 +23,13 @@ class ExploreSingle extends Component {
     }).catch(err => console.log(err))
   }
 
+// <Link to={`/explore`}><div className="back">{<ArrowBackIos />}</div></Link>
   renderExploreOrLoading() {
    if (this.state.apiDataLoaded) {
      return (
        <div className="inner">
         <div className="header">
-          <Link to={`/explore`}><div className="back">{<ArrowBackIos />}</div></Link>
+
           <h1>Post</h1>
         </div>
 
@@ -52,7 +53,7 @@ class ExploreSingle extends Component {
           </div>
 
           <h3>Buy this Look</h3>
-          
+
            <FurnitureList/>
        </div>
      )

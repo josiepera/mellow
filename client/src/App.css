@@ -100,6 +100,9 @@ a:visited {
   .header img{
     max-width: 58px;
   }
+  .header a {
+
+  }
 
 .profile-pic{
   border-radius: 50%;
@@ -164,7 +167,8 @@ h1{
  flex-wrap: wrap;
  justify-content: center; */
  display: flex;
- flex-wrap: wrap;
+justify-content: space-between;
+flex-wrap: wrap;
 }
 
 /* img{
