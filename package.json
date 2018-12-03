@@ -18,9 +18,9 @@
     "client": "cd client && npm run start",
     "server": "node app.js",
    "start": "node app.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "npm install && cd client && npm install --only-dev && npm install && npm run build"
   },
   "author": "Josie Peralta",
-  "license": "ISC",
-  "heroku-postbuild": "npm install && cd client && npm install --only-dev && npm install && npm run build"
+  "license": "ISC"
 }
