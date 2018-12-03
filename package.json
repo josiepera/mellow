@@ -20,5 +20,6 @@
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "author": "Josie Peralta",
-  "license": "ISC"
+  "license": "ISC",
+  "heroku-postbuild": "npm install && cd client && npm install --only-dev && npm install && npm run build"
 }

@@ -9,6 +9,8 @@ app.use(parser.urlencoded({extended: false}));
 const logger = require('morgan');
 app.use(logger('dev'));
 
+app.use(express.static('client/build'))
+
 app.get('/', (req,res) => {
   res.send(`<h1>Home Page</h1>`)
 })
