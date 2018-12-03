@@ -49,6 +49,10 @@ class ExploreAdd extends Component{
 
   render(){
     return(
+    <>
+      <div className="header">
+        <h1>Add Your Space</h1>
+      </div>
       <div className="add">
         <form onSubmit={(e) => this.handleFormSubmit(e)}>
           <label>
@@ -121,14 +125,14 @@ class ExploreAdd extends Component{
               onChange={(e) => this.handleInputChange(e)}
               />
           </label>
-          <input type="submit" value="Submit!" />
+          <input className="submit-button" type="submit" value="submit yo space" />
         </form>
         {this.state.fireRedirect
         ? <Redirect push to={`/explore/${this.state.newId}`} />
           : ''}
-        <FooterNav/>
       </div>
-
+      <FooterNav/>
+    </>
     )
   }
 }

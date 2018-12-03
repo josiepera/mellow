@@ -8,12 +8,7 @@ import Button from '@material-ui/core/Button';
 class Couch extends Component{
   state = {
     show: true,
-    deltaPosition: {
-      x: 0, y: 0
-    },
-    controlledPosition: {
-      x: -400, y: 200
-    }
+
 	}
   toggleInfo = () => {
     this.setState(prevState => ({
