@@ -11,8 +11,6 @@ app.use(parser.urlencoded({extended: false}));
 const logger = require('morgan');
 app.use(logger('dev'));
 
-
-
 app.get('/', (req,res) => {
   res.send(`<h1>Home Page</h1>`)
 })
