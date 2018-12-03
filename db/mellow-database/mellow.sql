@@ -68,7 +68,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://www.livingspaces.com/globalassets/images/inspiration/modern_livingroom_110217_1.jpg',
   'Organized Living Dream',
   869,
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  'Look at this photograph, Every time I do it makes me laugh, How did our eyes get so red? And what the hell is on Joeys head?'
 ),
 (
   'Grace Kalimba',
@@ -77,7 +77,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/7hjFNbE.jpg',
   'Organized Living Dream',
   50,
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  'Somebody once told me the world is gonna roll me I aint the sharpest tool in the shed. She was looking kind of dumb with her finger and her thumb in the shape of an "L" on her forehead'
 ),
 (
  'Evan Smith',
@@ -86,7 +86,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
  'https://i.imgur.com/qoUSPrl.jpg',
  'Bedroom',
  135,
- 'Dont think everything must be at the same level.  Add some shelves and drawers mong the hanging clothes. This will help break up space'
+ 'There used to be a greying tower alone on the sea, You became the light on the dark side of me, Love remained a drug thats the high and not the pill, But did you know that when it snows, My eyes become large and the light that you shine can be seen?'
 ),
 (
   'Meghan Lourdes',
@@ -104,7 +104,7 @@ INSERT INTO explore (name, location, profile_url, url, title, size, description)
   'https://i.imgur.com/PbvjmQn.jpg',
   'Bedroom of your dreamz',
   150,
-  'Would be crazy if this was your bedroom but its not'
+  'And I dont want the world to see me because I dont think that they would understand and when everything is meant to be broken, I just want you to know who I am'
 );
 
 INSERT INTO furniture_list (url, title, store, short_desc, long_desc) Values

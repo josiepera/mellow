@@ -6,7 +6,7 @@ class Home extends Component {
     return(
     <>
       <div className="home-page">
-      <Link to={`/tutorial/`}>
+      <Link to={`/explore/`}>
         <div className="enter">
           <img src="https://i.imgur.com/B2egNdE.png" alt="home"/>
         </div>
