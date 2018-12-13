@@ -13,8 +13,10 @@ import Bed from './Furniture/Bed';
 import Couch from './Furniture/Couch';
 import Rotatable from 'react-rotatable';
 import 'react-rotatable/dist/css/rotatable.min.css';
+import ScrollLock from 'react-scroll-lock-component';
 
 class RoomSingle extends Component {
+
   state = {
 		room: null,
 		apiDataLoaded: false,
@@ -43,7 +45,6 @@ class RoomSingle extends Component {
       })
     }).catch(err => console.log(err))
   }
-
 
   handleDrag(e, ui) {
       const {x, y} = this.state.deltaPosition;
@@ -87,12 +88,13 @@ class RoomSingle extends Component {
        <div className="inner">
         <div className="top">
           <h3>{this.state.room.title}</h3>
+          <ScrollLock>
           <div className="room-layout">
             <img className="room-pic"src={this.state.room.url} alt={this.state.room.type} />
 
 
               <Couch/>
-            
+
 
             <Bed/>
             <Table/>
@@ -100,6 +102,7 @@ class RoomSingle extends Component {
             <Rug/>
             <Television/>
           </div>
+          </ScrollLock>
       </div>
 
           <div className="furn-list">
