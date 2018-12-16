@@ -5,6 +5,7 @@ import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
 import { Link } from 'react-router-dom';
 import LocationOn from "@material-ui/icons/LocationOn";
 import FurnitureList from "./FurnitureList"
+import Nav from "./Nav"
 
 class ExploreSingle extends Component {
   state = {
@@ -29,8 +30,8 @@ class ExploreSingle extends Component {
      return (
        <div className="inner">
         <div className="header">
-
           <h1>Post</h1>
+          <Nav/>
         </div>
 
         <div className="prof-header">

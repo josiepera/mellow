@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Explore from './Explore'
 import axios from 'axios';
 import FooterNav from './FooterNav'
+import Nav from './Nav'
 
 
 class ExploreList extends Component {
@@ -48,6 +49,7 @@ class ExploreList extends Component {
       <div>
         <div className="header">
           <img src="https://i.imgur.com/mr5n2en.png" alt="header"/>
+          <Nav/>
         </div>
 
         <div className="search-bar">

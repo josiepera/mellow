@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Room from './Room';
+import Nav from './Nav';
 
 class RoomList extends Component{
   state = {
@@ -32,6 +33,7 @@ class RoomList extends Component{
     <>
       <div className="header">
   			<h1>My Rooms</h1>
+        <Nav/>
   		</div>
       <div className='room-list'>
 				{this.renderRooms()}

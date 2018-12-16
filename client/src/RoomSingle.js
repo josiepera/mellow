@@ -14,6 +14,7 @@ import Couch from './Furniture/Couch';
 import Rotatable from 'react-rotatable';
 import 'react-rotatable/dist/css/rotatable.min.css';
 import ScrollLock from 'react-scroll-lock-component';
+import Nav from './Nav';
 
 class RoomSingle extends Component {
 
@@ -79,12 +80,14 @@ class RoomSingle extends Component {
      return (
       <>
       <div className = "room-single">
+      
        <div className="header">
-
         <div>
    			  <h1>{this.state.room.type}</h1>
         </div>
+        <Nav/>
    		 </div>
+
        <div className="inner">
         <div className="top">
           <h3>{this.state.room.title}</h3>

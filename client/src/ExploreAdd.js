@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 import FooterNav from './FooterNav';
+import Nav from './Nav';
 
 class ExploreAdd extends Component{
   state = {
@@ -52,6 +53,7 @@ class ExploreAdd extends Component{
     <>
       <div className="header">
         <h1>Add Your Space</h1>
+        <Nav/>
       </div>
       <div className="add">
         <form onSubmit={(e) => this.handleFormSubmit(e)}>
