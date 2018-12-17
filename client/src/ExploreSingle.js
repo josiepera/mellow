@@ -4,8 +4,10 @@ import axios from 'axios';
 import ArrowBackIos from "@material-ui/icons/ArrowBackIos";
 import { Link } from 'react-router-dom';
 import LocationOn from "@material-ui/icons/LocationOn";
-import FurnitureList from "./FurnitureList"
-import Nav from "./Nav"
+import FurnitureList from "./FurnitureList";
+import Nav from "./Nav";
+import Avatar from '@material-ui/core/Avatar';
+import Grid from '@material-ui/core/Grid';
 
 class ExploreSingle extends Component {
   state = {
@@ -33,9 +35,12 @@ class ExploreSingle extends Component {
           <h1>Post</h1>
           <Nav/>
         </div>
-
+      <div className="explore-single">
         <div className="prof-header">
-          <img className="profile-pic" src={this.state.explore.profile_url} alt="Profile Pic" />
+
+          <Grid>
+            <Avatar alt="Remy Sharp" src={this.state.explore.profile_url}/>
+          </Grid>
             <div className="prof-info">
               <p className="prof-name">{this.state.explore.name}</p>
               <p className="location">{<LocationOn />} {this.state.explore.location}</p>
@@ -54,8 +59,8 @@ class ExploreSingle extends Component {
           </div>
 
           <h3>Buy this Look</h3>
-
            <FurnitureList/>
+        </div>
        </div>
      )
    } else return <img className="loading" src="http://www.tbaf.org.tw/event/2016safe/imgs/loader1.gif" alt="...loading"></img>
