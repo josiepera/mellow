@@ -533,4 +533,7 @@ h3{
   .nav{
     display: none;
   }
+  .search-txt{
+    height: 25px;
+  }
 }
