@@ -173,7 +173,7 @@ h1{
 
 .explore-list{
  display: flex;
- justify-content: space-between;
+ /* justify-content: space-between; */
  flex-wrap: wrap;
 }
 .filter-bar{
@@ -470,7 +470,10 @@ label{
 
 
 @media screen and (min-width: 550px) {
-  .FooterNav{
+  /* .FooterNav{
+    display: none;
+  } */
+  .nav{
     display: none;
   }
   .add-room{
@@ -530,10 +533,13 @@ h3{
 }
 
 @media screen and (max-width: 550px){
-  .nav{
+  /* .nav{
     display: none;
-  }
+  } */
   .search-txt{
     height: 25px;
+  }
+  .explore-list{
+    justify-content: space-between;
   }
 }
