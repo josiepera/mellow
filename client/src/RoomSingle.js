@@ -80,11 +80,9 @@ class RoomSingle extends Component {
      return (
       <>
       <div className = "room-single">
-      
+
        <div className="header">
-        <div>
    			  <h1>{this.state.room.type}</h1>
-        </div>
         <Nav/>
    		 </div>
 
