@@ -61,7 +61,7 @@ body .room-single{
 nav {
 	width: 100%;
   background: #fafafa;
-  border-top: 1px solid black;
+  border-top: 1px solid #d3d3d3;
 	margin: 0px;
   position: fixed;
   bottom: 0;
