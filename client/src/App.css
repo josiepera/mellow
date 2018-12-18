@@ -111,6 +111,8 @@ a:visited {
   }
 .nav a{
   color:#2e4058;
+  margin-left: 10px;
+  margin-right: 15px;
 }
 .nav p{
 
@@ -264,7 +266,7 @@ li{
 }
 .explore-container{
   display: flex;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 
@@ -469,12 +471,20 @@ label{
 }
 
 
-@media screen and (min-width: 550px) {
-  /* .FooterNav{
+@media screen and (min-width: 700px) {
+  .FooterNav{
     display: none;
-  } */
+  }
+  .header{
+    height:55px;
+  }
+  .header img{
+    margin-right: auto;
+    margin-left: auto;
+  }
   .nav{
-    display: none;
+    margin-left: -320px;
+    margin-right: 75px;
   }
   .add-room{
     /* margin-left:155px; */
@@ -530,12 +540,16 @@ h3{
   margin-left:0;
   justify-content: center;
 }
+.explore-list{
+  margin-right: 80px;
+  margin-left: 80px;
+}
 }
 
-@media screen and (max-width: 550px){
-  /* .nav{
+@media screen and (max-width: 700px){
+  .nav{
     display: none;
-  } */
+  }
   .search-txt{
     height: 25px;
   }
